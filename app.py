@@ -667,7 +667,7 @@ class EnhancedPortfolioRAGChatbot:
         
         # Second priority: Try to load PDF files (optional)
         pdf_files = [
-            os.path.join(self.static_folder, 'Bharavi_About_Me.pdf'),
+            os.path.join(self.static_folder, 'about.pdf'),
             os.path.join(self.static_folder, 'resume.pdf')
         ]
         
@@ -813,7 +813,7 @@ class EnhancedPortfolioRAGChatbot:
                     content=grade_12_content,
                     context="12th grade information",
                     category="education",
-                    keywords=["12th", "twelfth", "percentage", "science", "board", "school", "kendriya", "vidyalaya"],
+                    keywords=["12th", "twelfth", "percentage", "science", "board", "school"],
                     source="portfolio",
                     raw_text=grade_12_content,
                     metadata={'type': 'education', 'level': '12th'}
@@ -827,7 +827,7 @@ class EnhancedPortfolioRAGChatbot:
                     content=grade_10_content,
                     context="10th grade information",
                     category="education",
-                    keywords=["10th", "tenth", "percentage", "board", "school", "kendriya", "vidyalaya"],
+                    keywords=["10th", "tenth", "percentage", "board", "school"],
                     source="portfolio",
                     raw_text=grade_10_content,
                     metadata={'type': 'education', 'level': '10th'}
