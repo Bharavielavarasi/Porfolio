@@ -2,24 +2,11 @@ Flask
 langchain
 openai
 faiss-cpu
-import os
-import logging
-from flask import Flask, render_template, request, jsonify, send_from_directory
-from pathlib import Path
-import PyPDF2
-import pdfplumber
-import fitz  # PyMuPDF
-import json
-from datetime import datetime, date
-from sentence_transformers import SentenceTransformer
-import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
-from typing import List, Dict, Tuple, Optional
-from dotenv import load_dotenv
-import re
-from collections import defaultdict
-import spacy
-from dataclasses import dataclass
-from difflib import SequenceMatcher
-import string
-import traceback
+PyPDF2
+pdfplumber
+PyMuPDF
+python-dotenv
+sentence-transformers
+numpy
+scikit-learn
+spacy
