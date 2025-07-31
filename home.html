@@ -689,7 +689,7 @@
         .chat-header {
             background: linear-gradient(135deg, #8a2be2, #4b0082);
             color: white;
-            padding: 1.5rem;
+            padding: 1rem 1.5rem;
             border-radius: 25px 25px 0 0;
             display: flex;
             align-items: center;
@@ -1293,8 +1293,16 @@ Tools used: Python, Pandas, Scikit-learn.
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
+        
         };
-
+        
+        // Enter key press event for input
+        document.getElementById('chatInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+        e.preventDefault(); // Prevent form submission
+        document.getElementById('chatSend').click(); // Trigger send button click
+    }
+});
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
